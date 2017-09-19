@@ -10,7 +10,7 @@
 </br>
 
 ## 目录结构
---src                                    Web工程
+--src                                    Web工程</br>
 --Ekho-linux-install.txt                 Ekho安装说明文档
 
 ## 说明
