@@ -1,0 +1,33 @@
+3 ekho install
+#yum install libsndfile1-dev libpulse-dev libncurses5-dev libgtk2.0-dev libvorbis-dev libmp3lame-dev
+* libespeak-dev
+* libsndfile1-dev (http://www.mega-nerd.com/libsndfile/)
+* libpulse-dev
+* libncurses5-dev (required by --enable-festival)
+* libestools-dev (optionally required by --enable-festival)
+* festival-dev  (optionally required by --enable-festival)
+* libvorbis-dev (optional)
+* libmp3lame-dev (optional)
+* libdotconf-dev (required by --enable-speechd)
+* texinfo
+yum search espeak sndfile pulse ncurses estools festival vorbis
+yum search lame dotconf texinfo
+yum install libsndfile-devel.x86_64
+yum install espeak-devel.x86_64
+yum install pulseaudio-libs-devel.x86_64
+yum install ncurses-devel.x86_64
+yum install festival-devel.x86_64
+yum install libvorbis-devel.x86_64
+yum install dotconf-devel.x86_64
+yum install texinfo.x86_64
+yum install lame-devel.x86_64
+
+Ekho下载并安装
+./configure --enable-festival --with-mp3lame=yes
+make 
+make install
+
+[root@lvs-docker ekho-7.5]# ekho -v Mandarin "speak in Mandarin"
+
+
+Ekho install finished
